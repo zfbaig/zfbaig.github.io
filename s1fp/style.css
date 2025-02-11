@@ -1,3 +1,53 @@
 html, body {
-    background-color: red;
+    background-color: pink;
 }
+
+.smallimage {
+    width: 150px;
+}
+
+#vasewrapper {
+    position: relative;
+    overflow: visible; 
+}
+
+.vase {
+    width: 500px;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    /* clip-path: polygon(0% 10%, 30% 25%, 15% 45%, 25% 45%, 0 70%); */
+}
+
+
+#pinkLeft{
+    background-color: rgb(200, 29, 57);
+    opacity: 0.5;
+     
+    width: 500px;
+    height: 500px;
+    clip-path: polygon(6% 25%, 10% 20%, 15% 18%, 26% 20%, 27% 23%, 23% 24.5%, 21.5% 30%, 20% 35%, 
+    17% 40%, 12% 43%, 13% 45%, 15% 47.5%, 17% 48%, 23% 48%, 24% 49%, 19% 50%, 15% 50.5%, 16.5% 53%, 
+    16.5% 57%, 14% 63%, 11.5% 61.5%, 12% 58%, 11% 56%, 8% 59%, 6.5% 64%,5% 64%,3% 61%, 4% 57%, 5% 56%,
+     5% 54.5%, 4% 55%, 3% 56%,  1% 58%,  0% 58%, -4% 56%, -2% 45%, 2.5% 40%, 3% 37%, 3% 34%, 5% 31%, 3.5% 29%, 4% 27%);
+    position: absolute;
+    border-radius: 30px;
+    left: 25px;
+    top: 35px;
+}
+
+#pinkLeft:hover {
+    opacity: 0.3;
+}
+
+
+/* #styledtable {
+    border-collapse: collapse;
+} */
+
+#styledtable td {
+    border: 1px solid #000000;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+  }
