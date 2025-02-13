@@ -3,7 +3,11 @@ html, body {
 }
 
 .smallimage {
-    width: 150px;
+    width: 200px;
+}
+
+#fishimage {
+    width: 200px;
 }
 
 #vasewrapper {
@@ -31,11 +35,12 @@ html, body {
 }
 
 .pinkpurple {
-    visibility: hidden;
+    opacity: 0;
     width: 500px;
     position: absolute;
     left: 5px;
     top: 0;
+    pointer-events: none;
     
 }
 
@@ -44,9 +49,90 @@ html, body {
     visibility: visible;
 } */
 
-#pinkLeftFl:hover + .pinkpurple {
-    visibility: visible;
+#pinkLeftFl:hover ~ .pinkpurple {
+    opacity: 1;
 }
+
+#orchid {
+    width: 500px;
+    position: absolute;
+    background-color: black;
+    opacity: 0; 
+    left: 5px;
+    top: 0;
+    clip-path: polygon(80% 13%, 91% 16%, 91% 20%, 95% 19%, 99% 23%, 95% 29%,
+     80% 41%, 65% 40%, 62% 47%, 59% 55%, 56% 55%, 59% 46%, 61% 40%, 53% 35%, 
+     53% 30%, 59% 24%);
+}
+
+.orchidpath {
+    opacity: 0;
+    width: 500px;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    pointer-events: none;
+}
+
+#orchid:hover ~ .orchidpath {
+    opacity: 1;
+}
+
+#yellowfl {
+    width: 500px;
+    position: absolute;
+    background-color: black;
+    opacity: 0; 
+    left: 5px;
+    top: 0;
+    clip-path: polygon(37% 14%, 49% 14%, 47% 25%, 50% 27%, 49% 30%, 44% 34%, 
+    45% 45%, 44% 48%, 45% 56%, 42% 56%, 39% 47%, 37% 45%, 37% 40%, 40% 37%,
+     37% 34%, 33% 31%, 31% 25%, 36% 21%, 34% 17%);
+}
+
+.yellowpath {
+    opacity: 0;
+    width: 500px;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    pointer-events: none;
+}
+
+#yellowfl:hover ~ .yellowpath {
+    opacity: 1;
+}
+
+#purplefl {
+    width: 500px;
+    position: absolute;
+    background-color: black;
+    opacity: 0; 
+    left: 5px;
+    top: 0;
+    clip-path: polygon(57% 4%, 62% 5%, 64% 12%, 61% 16%, 67% 12.5%, 72% 14%, 
+    73% 20%, 66% 22%, 66% 24%, 57% 30%, 56% 34%, 55% 47%, 54% 55%, 54% 56%, 
+    52% 56%, 52% 49%, 53% 36%, 50% 27%, 44% 24.5%, 43% 20%, 44% 16%, 50% 14%,
+     56% 16%, 56% 13%,  52% 12%, 53% 5%);
+}
+
+.purplepath {
+    opacity: 0;
+    width: 500px;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    pointer-events: none;
+}
+
+#purplefl:hover ~ .purplepath {
+    opacity: 1;
+}
+
+
+/* .pinkpurple:hover {
+    opacity: 1;
+} */
 
 /* #pinkLeftFl:hover + .purpleboarder + #pinkpurple {
     display: block; 
@@ -101,14 +187,22 @@ html, body {
     opacity: 0.3;
 } */
 
-
-/* #styledtable {
+/* 
+#styledtable {
     border-collapse: collapse;
 } */
 
+#styledtable {
+    margin: 0 auto 0 auto;
+}
+
 #styledtable td {
-    border: 1px solid #000000;
+    border: 10px solid black;
     width: 200px;
     height: 200px;
     text-align: center;
   }
+
+  /* #homepage {
+    text-align: center;
+  } */
