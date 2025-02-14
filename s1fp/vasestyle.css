@@ -1,10 +1,5 @@
 html, body {
     background-color: pink;
-
-}
-
-#homepage {
-    background-color: rgb(210, 247, 135);
 }
 
 #backbutton {
@@ -12,99 +7,45 @@ html, body {
     z-index: 999;
 }
 
-#styledtable {
-    margin: 0 auto 0 auto;
-}
-
-#styledtable td {
-    border: 10px solid black;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-}
-
-.smallimage {
-    width: 200px;
-}
-
-#blub {
-    margin: 0 auto; 
-    translate: 50%;
-    scale: 1.5;
-}
-
-#fishimage {
-    width: 200px;
-    /* position: absolute; */
-    /* background-color: black; */
-    opacity: 1; 
-    /* left: 5px;
-    top: 0; */
-    /* clip-path: polygon(57% 4%, 62% 5%, 64% 12%, 61% 16%, 67% 12.5%, 72% 14%, 
-    73% 20%, 66% 22%, 66% 24%, 57% 30%, 56% 34%, 55% 47%, 54% 55%, 54% 56%, 
-    52% 56%, 52% 49%, 53% 36%, 50% 27%, 44% 24.5%, 43% 20%, 44% 16%, 50% 14%,
-     56% 16%, 56% 13%,  52% 12%, 53% 5%); */
-}
-
-
-.coquettefish {
-    opacity: 0;
-    width: 200px;
-    /* top: center; */
-    left: center;
-    translate: -100%;
+#vasecontainer-wrapper {
     position: absolute;
-    text-align: center;
-    margin: 0 auto;
-    pointer-events: none;
-    /*
-    left: 5px;
-    top: 0; */
-    
-}
-
-#fishimage:hover ~ .coquettefish {
-    opacity: 1;
-
+    left: 0; 
+    top: 20px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
 }
 
 #vasecontainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
-    
-    width: 50vw;
-    /* height: 100vh;
-    top: 350px; */
+    height: 100%;
+    position: relative; 
 }
 
 #vasewrapper {
-    position: relative; 
-    overflow: visible; 
-    margin: 0 auto 0 auto;
-    /* position: absolute; */
-    /* left: center;
-/* 
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */ 
-    /* translate: -50%; */
+    align-items: center; 
+    position: relative;
+
 }
 
 .vase {
     width: 500px;
-    position: absolute;
+    /* position: absolute;
     left: 5px;
-    top: 0;
+    top: 0; */
     /* clip-path: polygon(0% 10%, 30% 25%, 15% 45%, 25% 45%, 0 70%); */
 }
+
 
 #pinkLeftFl {
     width: 500px;
     position: absolute;
-    left: 5px;
+    left: 0px;
     top: 0;
     clip-path: polygon(6% 25%, 10% 20%, 15% 18%, 26% 20%, 27% 23%, 23% 24.5%, 21.5% 30%, 20% 35%, 
     17% 40%, 12% 43%, 13% 45%, 15% 47.5%, 17% 48%, 23% 48%, 24% 49%, 19% 50%, 15% 50.5%, 16.5% 53%, 
@@ -116,7 +57,7 @@ html, body {
     opacity: 0;
     width: 500px;
     position: absolute;
-    left: 5px;
+    left: 0px;
     top: 0;
     pointer-events: none;
     
@@ -136,7 +77,7 @@ html, body {
     position: absolute;
     background-color: black;
     opacity: 0; 
-    left: 5px;
+    left: 0px;
     top: 0;
     clip-path: polygon(80% 13%, 91% 16%, 91% 20%, 95% 19%, 99% 23%, 95% 29%,
      80% 41%, 65% 40%, 62% 47%, 59% 55%, 56% 55%, 59% 46%, 61% 40%, 53% 35%, 
@@ -147,7 +88,7 @@ html, body {
     opacity: 0;
     width: 500px;
     position: absolute;
-    left: 5px;
+    left: 0px;
     top: 0;
     pointer-events: none;
 }
@@ -161,7 +102,7 @@ html, body {
     position: absolute;
     background-color: black;
     opacity: 0; 
-    left: 5px;
+    left: 0px;
     top: 0;
     clip-path: polygon(37% 14%, 49% 14%, 47% 25%, 50% 27%, 49% 30%, 44% 34%, 
     45% 45%, 44% 48%, 45% 56%, 42% 56%, 39% 47%, 37% 45%, 37% 40%, 40% 37%,
@@ -172,7 +113,7 @@ html, body {
     opacity: 0;
     width: 500px;
     position: absolute;
-    left: 5px;
+    left: 0px;
     top: 0;
     pointer-events: none;
 }
@@ -186,7 +127,7 @@ html, body {
     position: absolute;
     background-color: black;
     opacity: 0; 
-    left: 5px;
+    left: 0px;
     top: 0;
     clip-path: polygon(57% 4%, 62% 5%, 64% 12%, 61% 16%, 67% 12.5%, 72% 14%, 
     73% 20%, 66% 22%, 66% 24%, 57% 30%, 56% 34%, 55% 47%, 54% 55%, 54% 56%, 
@@ -198,7 +139,7 @@ html, body {
     opacity: 0;
     width: 500px;
     position: absolute;
-    left: 5px;
+    left: 0px;
     top: 0;
     pointer-events: none;
 }
