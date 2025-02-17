@@ -1,0 +1,63 @@
+<head></head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="paintingstyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- INSIDE ME -->
+    <a href="vase.html"> <img id="backbutton" src = "flowerback3.png"></a>
+    <div id="wholewrapper">
+        <div class="insideme_wrapper">
+            <img id="painting" src="A Different Perspective.jpeg">
+            <div id="piece_header">
+                <div id="piece_title"> A Different Perspective, </div> 2022, pastel on paper, 18 x 24"
+            </div>
+            <div id="description">
+                Mundane articles and memorabilia - student ID, Carnegie Hall ticket, 
+                boxing hand wraps, subway card, map, and books - have become essential
+                 appendages of my life. If we could get an overhead perspective of our 
+                 present selves, would we be able to predict the future course of our lives? 
+                 Following the diagonal lines in the picture, will we remain close to the 
+                 things familiar to us at the moment or move away from them in the future? 
+
+            </div>
+            <!-- <div id = "screen"> </div>
+            <img class="paintingClicked" src="Inside me.jpeg"> -->
+
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        
+    </div>
+    <script>
+        // // Get the modal
+        // var modal = document.getElementById("myModal");
+        var modal = document.getElementById("myModal");
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("painting");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+</body>

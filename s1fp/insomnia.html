@@ -1,0 +1,64 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- INSOMNIA -->
+    <a href="vase.html"> <img id="backbutton" src = "flowerback3.png"></a>
+    <div id="wholewrapper">
+        <div class="insideme_wrapper" id = "insomnia_wrapper">
+            <!-- <img class="painting" id = "insomnia" src="Insomnia.jpeg"> -->
+            <img id="insomnia" src="Insomnia.jpeg">
+            <div id="piece_header">
+                <div id="piece_title"> Insomnia, </div> 2022, oil on canvas, 24 x 18"
+            </div>
+            <div id="description">
+                This self-portrait depicts my struggle to fall asleep. My three personas,
+                namely frustration, anguish and stress are inevitably connected, always
+                experiencing turmoil inside and turbulence outside of me. In general, we
+                live life in multiple states, needing to reconcile our angst and vulnerabilities
+                in order to achieve calmness and poise.
+
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+                <!-- Modal Content (The Image) -->
+                <!-- <img class="modal-content" id="img01"> -->
+                <img class="modal-content" id="insomnia-content">
+
+
+            </div>
+            <script>
+                // // Get the modal
+                // var modal = document.getElementById("myModal");
+                var modal = document.getElementById("myModal");
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("insomnia");
+                // var modalImg = document.getElementById("img01");
+                var modalImg = document.getElementById("insomnia-content");
+                img.onclick = function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+            </script>
+        </div>
+    </div>
+
+
+
+</body>

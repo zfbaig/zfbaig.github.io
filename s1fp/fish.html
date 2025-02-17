@@ -1,10 +1,113 @@
-<head></head>
+<html id="fishpage">
+
+</html>
+
+<head>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+    </style>
 </head>
-<body>
-    FISH
-    <a id = "backbutton" href="index.html"> back button</a>
-    <div id = "blub">
+
+<body id="fishpage">
+    <!-- FISH -->
+    <a href="index.html"> <img id="backbutton" src = "fishbowl.png"></a>
+    <!-- <div id = "blub">
         <img id = "fishimage" src ="goldfishblue.png"><img class = "coquettefish" src = "goldfishblub4.png"></a>
+    </div> -->
+    <div id="fishcontainer-wrapper">
+        <div id="fishcontainer">
+            <div id="fishwrapper">
+                <!-- <img id="fishimage_fishpage" src="goldfishblue.png"><img class="blubfish" src="goldfishblub4.png"></a> -->
+                <img id="fishimage_fishpage" src="goldfishblue.png"><img class="blubfish" src="goldfishblub5.png"></a>
+
+            </div>
+            <!-- <div id="click">
+                click
+            </div> -->
+            <div id="scroll">
+                scroll
+            </div>
+
+        </div>
+        <div class="bg-image">
+            <div id="undercurrrent_container">
+                <div id="undercurrent_wrapper">
+                    <!-- <img id="painting_section1" src="s1fp/undercurrent_parts/Undercurrent2.png"> -->
+                    <div class="spacer"></div>
+                    <img class="painting_section" src="Undercurrent2.png">
+                    <div class="spacer"></div>
+                    <img class="painting_section" src="Undercurrent3.png">
+                    <div class="spacer"></div>
+                    <img class="painting_section" src="Undercurrent4.png">
+                    <div class="spacer"></div>
+                    <img class="painting_section" src="Undercurrent5.png">
+                    <div class="spacer"></div>
+                    <img class="painting_section" src="Undercurrent6.png">
+                    <div class="spacer"></div>
+                    <img class="painting_section" src="Undercurrent7.png">
+                    <div class="spacer"></div>
+                    <img class="painting_section" src="Undercurrent8.png">
+                    <div class="spacer"></div>
+                    <img class="painting_section" src="Undercurrent9.png">
+                    <div class="spacer"></div>
+                    <img class="painting_section" src="Undercurrent10.png">
+                    <div class="spacer"></div>
+                    <img class="painting_section" id = "paintingUnder" src="Undercurrent.jpg">
+                    <div class="spacer"></div>
+                    <!-- <img id="painting" src="Inside me.jpeg"> -->
+                    <div id="undercurrent_blub">
+                        <div class="spacer" id = "blurbspace"></div>
+                        <div id="piece_header_Under">
+                            <div id="piece_title_Under"> Undercurrent, </div> 2022, acrylic on canvas, 20 x 24"
+                        </div>
+
+                        <div id="description_Under">
+                            In this surreal piece, I imagine a subway station underwater. Using juxtaposition
+                            and a deep perspective, I introduce and integrate unlikely objects in a shooting
+                            space to realize a hallucinogenic experience. Can suspending ourselves from reality
+                            and allowing our thoughts to flow freely help us find creative solutions?
+                        </div>
+                    </div>
+                     <div class="spacer" id = "blurbspace"></div>
+                    
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="modalUnder" class="modal">
+            <!-- <div id="myModal" class="modal"> -->
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                
+            </div>
+            <script>
+                // // Get the modal
+                // var modal = document.getElementById("myModal");
+                var modal = document.getElementById("modalUnder");
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("paintingUnder");
+                var modalImg = document.getElementById("img01");
+                img.onclick = function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+            </script>
+        </div>
+
     </div>
+
 </body>

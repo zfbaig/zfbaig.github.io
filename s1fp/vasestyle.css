@@ -3,8 +3,14 @@ html, body {
 }
 
 #backbutton {
-    position: absolute;
+    /* position: absolute; */
     z-index: 999;
+    position: fixed;
+    /* z-index: 9999999; */
+    width: 80px;
+    height: 80px;
+    left: 23px;
+    top: 10px;
 }
 
 #vasecontainer-wrapper {
@@ -35,6 +41,7 @@ html, body {
 
 .vase {
     width: 500px;
+    /* width: 30vw; */
     /* position: absolute;
     left: 5px;
     top: 0; */
@@ -44,6 +51,7 @@ html, body {
 
 #pinkLeftFl {
     width: 500px;
+    /* width: 30vw; */
     position: absolute;
     left: 0px;
     top: 0;
@@ -56,6 +64,7 @@ html, body {
 .pinkpurple {
     opacity: 0;
     width: 500px;
+    /* width: 30vw; */
     position: absolute;
     left: 0px;
     top: 0;
@@ -74,6 +83,7 @@ html, body {
 
 #orchid {
     width: 500px;
+    /* width: 30vw; */
     position: absolute;
     background-color: black;
     opacity: 0; 
@@ -87,6 +97,7 @@ html, body {
 .orchidpath {
     opacity: 0;
     width: 500px;
+    /* width: 30vw; */
     position: absolute;
     left: 0px;
     top: 0;
@@ -99,6 +110,7 @@ html, body {
 
 #yellowfl {
     width: 500px;
+    /* width: 30vw; */
     position: absolute;
     background-color: black;
     opacity: 0; 
@@ -112,6 +124,7 @@ html, body {
 .yellowpath {
     opacity: 0;
     width: 500px;
+    /* width: 30vw; */
     position: absolute;
     left: 0px;
     top: 0;
@@ -124,6 +137,7 @@ html, body {
 
 #purplefl {
     width: 500px;
+    /* width: 30vw; */
     position: absolute;
     background-color: black;
     opacity: 0; 
@@ -138,6 +152,7 @@ html, body {
 .purplepath {
     opacity: 0;
     width: 500px;
+    /* width: 30vw; */
     position: absolute;
     left: 0px;
     top: 0;
@@ -168,6 +183,7 @@ html, body {
 .purpleboarder {
     display: none;
     width: 500px;
+    /* width: 30vw; */
     position: absolute;
     left: 5px;
     top: 0;
@@ -178,6 +194,8 @@ html, body {
     background-color: rgb(200, 29, 57);
     opacity: 1;
     width: 500px;
+    /* min-width: 300px; */
+    /* width: 30vw; */
     height: 500px;
     clip-path: polygon(6% 25%, 10% 20%, 15% 18%, 26% 20%, 27% 23%, 23% 24.5%, 21.5% 30%, 20% 35%, 
     17% 40%, 12% 43%, 13% 45%, 15% 47.5%, 17% 48%, 23% 48%, 24% 49%, 19% 50%, 15% 50.5%, 16.5% 53%, 

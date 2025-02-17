@@ -1,0 +1,72 @@
+<head>
+    <link rel="stylesheet" href="paintingstyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- INSIDE ME -->
+    <a href="vase.html"> <img id="backbutton" src = "flowerback3.png"></a>
+    <div id="wholewrapper">
+        <div class="insideme_wrapper">
+            <!-- <img class="painting" src="Inside me.jpeg"> -->
+            <!-- Trigger the Modal -->
+            <!-- <img id="myImg" src="Inside me.jpeg" style="width:100%;max-width:300px"> -->
+            <!-- <img id="myImg" src="Inside me.jpeg"> -->
+            <img id="painting" src="Inside me.jpeg">
+
+            <div id="piece_header">
+                <div id="piece_title"> Inside me, </div> 2022, oil on canvas, 18 x 24"
+            </div>
+
+            <div id="description">
+                The dance of Lord Shiva represents life as a cycle of creation,
+                preservation, and destruction. My performance of that dance entails
+                felt experiences of my grandmother’s garden, cricket games with my
+                grandfather, crumbling minarets of the Old City, and the pink curtains
+                of my childhood bedroom that are an internal reality that will always
+                be inside me. The multi-faceted past is not only a part of us but it
+                provides a foundation for the future that lies ahead. I was inspired
+                by Frida Kahlo’s use of symbols and surrealist juxtapositions in her
+                self-portraits to represent moments in her life, her emotions, and
+                ultimately her identity.
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                
+            </div>
+            <script>
+                // // Get the modal
+                // var modal = document.getElementById("myModal");
+                var modal = document.getElementById("myModal");
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("painting");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function () {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+            </script>
+        </div>
+    </div>
+
+
+</body>
