@@ -19,7 +19,14 @@ body {
 }
 
 #homepage {
-    background-color: rgb(210, 247, 135);
+    /* background-color: rgb(210, 247, 135); */
+    background-color: rgb(127, 218, 253);
+    background-color: rgb(190, 237, 255);
+
+}
+
+#clickpage {
+    background-color: rgb(192, 207, 255);
 }
 
 
@@ -137,14 +144,6 @@ body {
 
 /* --------START OF MODAL--------  */
 
-/* Style the Image Used to Trigger the Modal */
-/* #myImg {
-    border-radius: 5px;
-    width: 580px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: 10px solid rgba(23, 0, 18, 0.155);
-} */
 
 #painting:hover {
     opacity: 0.7;
@@ -185,7 +184,7 @@ body {
 }
 
 #modalUnder {
-    background-color:darkblue;
+    background-color: darkblue;
 }
 
 /* Modal Content (Image) */
@@ -311,6 +310,23 @@ body {
     display: inline-block
 }
 
+#page_title {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    /* font-size: 02vw; */
+    font-size: 45;
+    font-style: italic;
+    /* display: inline-block; */
+    text-align: center;
+    margin: 70 auto;
+    color: darkblue;
+    text-shadow:  2px 2px 4px rgb(147, 172, 255);
+    /* text-shadow:  0px 0px 5px rgba(147, 172, 255, 0.215); */
+    /* text-shadow: -1px 0 rgb(147, 172, 255), 0 1px rgb(147, 172, 255), 1px 0 rgb(147, 172, 255), 0 -1px rgb(147, 172, 255); */
+    /* text-shadow: 0px 0px 2px black; */
+
+}
+
 #piece_header {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
@@ -338,19 +354,82 @@ body {
 }
 
 
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    /* width: 25%; */
+    width: 15%;
+    padding: 5px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.row {
+    margin: 0 auto;
+    /* top: 0; */
+    display: flex;
+    /* display: absolute; */
+    background-color: rgba(147, 172, 255, 0.215);
+    
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+}
+
+#photo-wrapper {
+    position: flex;
+    margin: 0 auto;
+    /* left: 2.5vw;
+    right: 2.5vw; */
+    /* background-color: darkblue; */
+    /* border-radius: 5px; */
+    top: 20px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+/* #photo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+
+} */
+
+#photo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative; 
+    
+}
+
+#photo-container-wrapper {
+    position: absolute;
+    left: 0; 
+    top: 150px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}   
 
 #fishimage {
     /* width: 200px; */
     width: 20vw;
-    /* position: absolute; */
-    /* background-color: black; */
     opacity: 1;
-    /* left: 5px;
-    top: 0; */
-    /* clip-path: polygon(57% 4%, 62% 5%, 64% 12%, 61% 16%, 67% 12.5%, 72% 14%, 
-    73% 20%, 66% 22%, 66% 24%, 57% 30%, 56% 34%, 55% 47%, 54% 55%, 54% 56%, 
-    52% 56%, 52% 49%, 53% 36%, 50% 27%, 44% 24.5%, 43% 20%, 44% 16%, 50% 14%,
-     56% 16%, 56% 13%,  52% 12%, 53% 5%); */
 }
 
 
@@ -377,17 +456,8 @@ body {
 }
 
 #flowertile {
-    /* width: 200px; */
     width: 19vw;
-    /* position: absolute; */
-    /* background-color: black; */
     opacity: 1;
-    /* left: 5px;
-    top: 0; */
-    /* clip-path: polygon(57% 4%, 62% 5%, 64% 12%, 61% 16%, 67% 12.5%, 72% 14%, 
-    73% 20%, 66% 22%, 66% 24%, 57% 30%, 56% 34%, 55% 47%, 54% 55%, 54% 56%, 
-    52% 56%, 52% 49%, 53% 36%, 50% 27%, 44% 24.5%, 43% 20%, 44% 16%, 50% 14%,
-     56% 16%, 56% 13%,  52% 12%, 53% 5%); */
 }
 
 
@@ -521,67 +591,7 @@ body {
     }
 }
 
-/* font-family: "DM Serif Display", serif;
-font-weight: 400;
 
-font-size: 23;
-font-style: regular;
-width: 650;
-margin: 0 auto;
-
-
-}
-
-#description {
-font-family: "Cormorant Garamond", serif;
-font-weight: 600;
-font-style: normal;
-text-align: justify; */
-
-/* #textclick {
-    
-} */
-
-/* #cover {
-    position: absolute;
-    width: 40vw;
-    height: 70vh;
-    opacity: 0.7; 
-    transform: translateY(-50px);
-    background-color: red;;
-    z-index: 100;
-    display:block;
-
-} */
-
-/* #cover:hover { */
-/* opacity: 0; */
-/* visibility: hidden;
-    display: none;
-    pointer-events: none;
-   
-} */
-
-/* 
-@keyframes delayedRemove {
-    from {
-        visibility: visible;
-    }
-    to {
-      visibility: hidden;
-      display: none; 
-    }
-  }
-  
-  .delayedRemove {
-    position: absolute;
-    width: 40vw;
-    height: 70vh;
-    opacity: 0.3; 
-    transform: translateY(-50px);
-    visibility: visible;
-    animation: 0s linear 2.3s forwards delayedRemove ;
-  } */
 
 #fishimage_fishpage {
     /* width: 200px; */
@@ -755,18 +765,6 @@ text-align: justify; */
     /* font-style: regular; */
 }
 
-/* .bg-image { */
-/* Full height */
-/* position: relative;
-    height: 100%;
-    width: 100%;
-    background-color: darkblue;
-   */
-/* Center and scale the image nicely */
-/* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
 
 /* FISH PAGE END */
 
@@ -787,13 +785,7 @@ text-align: justify; */
     position: relative;
     overflow: visible;
     margin: 0 auto 0 auto;
-    /* position: absolute; */
-    /* left: center;
-/* 
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* translate: -50%; */
+
 }
 
 .vase {
@@ -825,10 +817,6 @@ text-align: justify; */
 
 }
 
-/* #pinkpurple:hover {
-    display: block;
-    visibility: visible;
-} */
 
 #pinkLeftFl:hover~.pinkpurple {
     opacity: 1;
@@ -911,22 +899,6 @@ text-align: justify; */
 }
 
 
-
-
-
-/* .pinkpurple:hover {
-    opacity: 1;
-} */
-
-/* #pinkLeftFl:hover + .purpleboarder + #pinkpurple {
-    display: block; 
-    background-color: rgb(200, 29, 57);
-    /* mask-image: url(Untitled_Artwork\ 4.png); */
-/* border-color: black; */
-/* left: 20px;
-    top: 0px; 
-} */
-
 .purpleboarder {
     display: none;
     width: 500px;
@@ -949,29 +921,3 @@ text-align: justify; */
     left: 25px;
     top: 35px;
 }
-
-
-
-/* #pinkLeft{
-    background-color: rgb(200, 29, 57);
-    opacity: 0;
-    width: 500px;
-    height: 500px;
-    clip-path: polygon(6% 25%, 10% 20%, 15% 18%, 26% 20%, 27% 23%, 23% 24.5%, 21.5% 30%, 20% 35%, 
-    17% 40%, 12% 43%, 13% 45%, 15% 47.5%, 17% 48%, 23% 48%, 24% 49%, 19% 50%, 15% 50.5%, 16.5% 53%, 
-    16.5% 57%, 14% 63%, 11.5% 61.5%, 12% 58%, 11% 56%, 8% 59%, 6.5% 64%,5% 64%,3% 61%, 4% 57%, 5% 56%,
-     5% 54.5%, 4% 55%, 3% 56%,  1% 58%,  0% 58%, -4% 56%, -2% 45%, 2.5% 40%, 3% 37%, 3% 34%, 5% 31%, 3.5% 29%, 4% 27%);
-    position: absolute;
-    border-radius: 30px;
-    left: 25px;
-    top: 35px;
-}
-
-#pinkLeft:hover {
-    opacity: 0.3;
-} */
-
-/* 
-#styledtable {
-    border-collapse: collapse;
-} */
