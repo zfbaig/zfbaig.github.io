@@ -27,17 +27,18 @@ body {
     left: 0;
     top: 0;
     /* width: 50vw; */
-    height: 35vh;
+    height: 300px;
+    margin: 0 auto 0 auto;
     z-index: 0;
 }
 
-/* #WR_wrapper{
+#WR_wrapper{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     position: relative;
 
-} */
+}
 
 /* #WR_container {
     display: flex;
